@@ -8,12 +8,12 @@
     "year": 2026,
     "status": "published",
     "highlight": true,
-    "tags": ["Signal Processing", "MIL", "Interpretability"],
-    "abstract": "Proposed IHemoMIL, combining MIL with saliency-priority ranking-based aggregation to jointly optimize accuracy and intrinsic interpretability under weak supervision. Developed a causally-driven PPG simulation method with timestep-level annotations. Outperformed mainstream temporal models across nine datasets covering anomaly detection, BP fluctuation recognition, and human activity recognition.",
-    "image": "assets/images/papers/ihemomil.png",
+    "tags": ["Signal Processing", "Explainable artificial intelligence", "Motif localization", "Multi-instance learning", "Neural network", "Photoplethysmography", "Physiological data generation"],
+    "abstract": "Ambulatory hemodynamic monitoring using photoplethysmography (PPG) holds promise for early detection and management of cardiovascular diseases. However, the increasing demand for automatic diagnosis in routine clinicals, coupled with the scarcity of well-labeled datasets, exacerbates significant challenges in developing learning-based tools with accessibility and explainability. To address these issues, this work proposed a reality-inspired pipeline for PPG generation and an Interpretable Hemodynamic pattern recognition framework with Multi-Instance Learning (IHemoMIL). Fluctuation patterns were introduced using anomaly injection and cardiovascular simulation response. This approach produced fine-grained, labeled synthetic PPG in a causality-informed manner for benchmarking. Multi-instance learning, with its aggregation process optimized by ranking-based mechanisms, was first applied to identify hemodynamic patterns and discriminative motifs within PPG waveforms under a weakly supervised paradigm, inherently providing salience-induced explainability. Extensive evaluations across nine datasets showcase IHemoMIL's superior interpretable and predictive performance compared to state-of-the-art methods, with ablation studies validating the effectiveness of key components. The compact yet effective IHemoMIL aligns with human intuition and integrates seamlessly into the diagnostic workflow, thereby contributing to improved patient outcomes and enhanced healthcare delivery. ",
+    "image": "https://image-oss-danielwangow.oss-cn-shanghai.aliyuncs.com/PR2026.png",
     "links": {
-      "paper": "#",
-      "code": "#"
+      "paper": "https://www.sciencedirect.com/science/article/abs/pii/S0031320325016449",
+      "code": "https://github.com/DanielWangoW/IHemoMIL"
     }
   },
   {
@@ -25,11 +25,11 @@
     "year": 2025,
     "status": "published",
     "highlight": true,
-    "tags": ["Robotics", "Rehabilitation", "Eye Tracking", "HRI"],
-    "abstract": "Integrated eye tracking with gaze-triggered mechanisms into an upper-limb rehabilitation robot, combined with serious game design. System fused admittance control, adaptive trajectory planning, and multisensory feedback. A 10-participant study showed significant gains in gaze concentration (↑25.92%) and tracking accuracy (↑27.27%); fNIRS confirmed enhanced motor and visual cortical activation.",
-    "image": "assets/images/papers/gazeandgo.png",
+    "tags": ["Robotics", "Eye gaze Tracking", "HRI", "Serious game", "Neuroplasticity"],
+    "abstract": "Therapeutic robotic systems have emerged as reliable tools for physical rehabilitation, providing variableintensity movement assistance to patients with motor impairments. Robot-assisted rehabilitation facilitates the restoration mobility and dexterity, promotes functional neuroplasticity and potentially enables workforce reentry through training-induced cognitive and motor learning. To boost participant engagement and visuomotor coordination, we propose ArmGuider Pro, an advanced upper-limb training system that integrates hand-eye collaboration and gazetriggered assistance within rehabilitation-tailored serious games. The system implements intuitive eye-tracking and visualtriggering strategies to align therapeutic interventions with participants' intentional focus, incorporating immersive gaming elements and adaptive control algorithms. Experimental validation demonstrates significant activation in motor and cognitive cerebral cortex regions, enhanced visual attention concentration in desired target areas (25.92 % improvement), and improved trajectory adherence across sequential sessions (27.27 % improvement). By harnessing visual attention valence, our proposed system could encourage neuroplasticity, supporting its viability for clinical application and widespread adaption in rehabilitation regimens.",
+    "image": "https://image-oss-danielwangow.oss-cn-shanghai.aliyuncs.com/ICRA-Poster%20copy.png",
     "links": {
-      "paper": "#",
+      "paper": "https://ieeexplore.ieee.org/abstract/document/11127634",
       "project": "#"
     }
   },
@@ -39,15 +39,16 @@
     "authors": "<strong>Daomiao Wang</strong>, Q. Hu, C. Cao, X. Feng, H. Wu, S. Zhu, H. Wang, C. Yang",
     "venue": "Expert Systems with Applications",
     "venue_short": "ESWA",
+    "venue_notes": ["JCR/CAS Q1"],
     "year": 2024,
     "status": "published",
     "highlight": false,
-    "tags": ["ECG", "GNN", "Privacy", "Multi-center"],
-    "abstract": "Proposed PM²ECGCN for GNN-based multi-center multi-lead ECG diagnosis. Modeled spatio-temporal dependencies via parallelized static and dynamic cardiac graphs, with graph attention and fast spectral pooling. Introduced feature-sharing co-training for privacy preservation and domain adaptation for data heterogeneity.",
-    "image": "assets/images/papers/pm2ecgcn.png",
+    "tags": ["ECG", "GNN", "Automatic Diagnostic", "Privacy-Preserving Computation", "Domain Adaptation"],
+    "abstract": "Cardiovascular diseases (CVDs) are the leading global cause of death. As first-line diagnostic tool for CVDs, electrocardiograms (ECG) non-invasively assess cardiac condition across all clinical levels. Despite the strides made in automatic ECG analysis through artificial intelligence, current methods fail to utilize spatial–temporal interactions of multi-lead ECG, address multi-center data heterogeneity, and adapt to data security and computational constraints. This study proposed a graph neural network-based framework named PM2ECGCN responding to these challenges of multi-lead ECG from multi-center sources. PM2ECGCN independently extracts spatial–temporal dependencies with learning-based featurization on each isolated subset, and trains collaboratively under feature-sharing strategy that bridging isolated outcomes without exposing raw data. Benefiting from information fusion capacities of graph convolutional network with attention mechanism, PM2ECGCN enhances explicit topological representations of multi-lead ECG via parallelized cardiac graph structures, and fast spectral pooling provides linear inference complexity. PM2ECGCN promotes condition-invariant knowledge learning with domain adaptation for tackling the data heterogeneity of distrubution. Extensive experiments, conducted with various configurations under diverse scenarios, involve two public datasets, PTBXL and ICBEB, along with an external dataset from day-to-day clinical practice we collected. Empirical evaluations showcase outperformance over cutting-edge strategies for multi-center CVD diagnosis with consistent improvements, demonstrating potential for real-world clinical deployment.",
+    "image": "https://image-oss-danielwangow.oss-cn-shanghai.aliyuncs.com/PM2ECGCN_1_ESWA.png",
     "links": {
-      "paper": "#",
-      "code": "#"
+      "paper": "https://www.sciencedirect.com/science/article/abs/pii/S0957417424007358",
+      "code": "https://github.com/DanielWangoW/PM2ECGCN"
     }
   },
   {
@@ -82,6 +83,8 @@
       "paper": "#"
     }
   },
+
+  
   {
     "id": "pismil",
     "title": "Label-free Anomaly Detection in Cardiovascular Signals with Persistence-informed Multi-instance Learning",
@@ -94,6 +97,22 @@
     "tags": ["TDA", "MIL", "Anomaly Detection", "LLM"],
     "abstract": "Proposed PISMIL, fusing persistent homology with MIL for label-free cardiovascular anomaly detection. Topological invariants from quasi-periodic signal phase spaces generate unsupervised priors guiding attention MIL for weakly supervised fine-grained localization. Integrated an LLM semantic engine to support 'verify–confirm' clinical workflow.",
     "image": "assets/images/papers/pismil.png",
+    "links": {
+      "paper": "#"
+    }
+  },
+  {
+    "id": "cardiac-rehab",
+    "title": "Sense, Adapt, and Coach: Toward Closed-Loop Remote Cardiac Exercise with Proactive Regulation",
+    "authors": "<strong>Daomiao Wang</strong>, et al.",
+    "venue": "Advanced Engineering Informatics",
+    "venue_short": "AEI",
+    "year": 2025,
+    "status": "under review",
+    "highlight": false,
+    "tags": ["Cardiac Rehab", "Agent", "PPG", "RL"],
+    "abstract": "Proposed an agent-driven closed-loop sensing–decision–interaction training system for remote cardiac rehabilitation. Developed a custom ear-clip PPG device for robust heart rate monitoring; applied PPO with GAE for temporal credit assignment under cardiac response latency.",
+    "image": "assets/images/papers/cardiac_rehab.png",
     "links": {
       "paper": "#"
     }
