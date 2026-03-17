@@ -1,0 +1,117 @@
+[
+  {
+    "id": "ihemomil",
+    "title": "Thinking Like Clinicians: Ranking-based Multi-instance Learning for PPG-based Hemodynamic Fluctuation Detection",
+    "authors": "<strong>Daomiao Wang</strong>, Q. Hu, X. Xing, H. Wu, J. Liu, X. Fu, C. Yang",
+    "venue": "Pattern Recognition",
+    "venue_short": "PR",
+    "year": 2026,
+    "status": "published",
+    "highlight": true,
+    "tags": ["Signal Processing", "MIL", "Interpretability"],
+    "abstract": "Proposed IHemoMIL, combining MIL with saliency-priority ranking-based aggregation to jointly optimize accuracy and intrinsic interpretability under weak supervision. Developed a causally-driven PPG simulation method with timestep-level annotations. Outperformed mainstream temporal models across nine datasets covering anomaly detection, BP fluctuation recognition, and human activity recognition.",
+    "image": "assets/images/papers/ihemomil.png",
+    "links": {
+      "paper": "#",
+      "code": "#"
+    }
+  },
+  {
+    "id": "gazeandgo",
+    "title": "Gaze and Go: Harnessing Visual Attention Valence in Upper-Limb Robotic Rehabilitation with Tailored Gamification and Eye Tracking for Neuroplasticity",
+    "authors": "<strong>Daomiao Wang</strong>*, P. He*, Y. Wang, Z. Jian, Z. Song, Q. Hu, F. Fang, C. Yang, D. Wang, et al. (*co-first author)",
+    "venue": "IEEE International Conference on Robotics and Automation",
+    "venue_short": "ICRA",
+    "year": 2025,
+    "status": "published",
+    "highlight": true,
+    "tags": ["Robotics", "Rehabilitation", "Eye Tracking", "HRI"],
+    "abstract": "Integrated eye tracking with gaze-triggered mechanisms into an upper-limb rehabilitation robot, combined with serious game design. System fused admittance control, adaptive trajectory planning, and multisensory feedback. A 10-participant study showed significant gains in gaze concentration (↑25.92%) and tracking accuracy (↑27.27%); fNIRS confirmed enhanced motor and visual cortical activation.",
+    "image": "assets/images/papers/gazeandgo.png",
+    "links": {
+      "paper": "#",
+      "project": "#"
+    }
+  },
+  {
+    "id": "pm2ecgcn",
+    "title": "PM²ECGCN: Parallelized Spatial-Temporal Structures of Multi-Lead ECG with Graph Convolution Network for Multi-Center Cardiac Disease Diagnosis",
+    "authors": "<strong>Daomiao Wang</strong>, Q. Hu, C. Cao, X. Feng, H. Wu, S. Zhu, H. Wang, C. Yang",
+    "venue": "Expert Systems with Applications",
+    "venue_short": "ESWA",
+    "year": 2024,
+    "status": "published",
+    "highlight": false,
+    "tags": ["ECG", "GNN", "Privacy", "Multi-center"],
+    "abstract": "Proposed PM²ECGCN for GNN-based multi-center multi-lead ECG diagnosis. Modeled spatio-temporal dependencies via parallelized static and dynamic cardiac graphs, with graph attention and fast spectral pooling. Introduced feature-sharing co-training for privacy preservation and domain adaptation for data heterogeneity.",
+    "image": "assets/images/papers/pm2ecgcn.png",
+    "links": {
+      "paper": "#",
+      "code": "#"
+    }
+  },
+  {
+    "id": "sdpr",
+    "title": "Diffusion Model with Self-Supervised Training for Subject-Aware Photoplethysmography Recovery",
+    "authors": "<strong>Daomiao Wang</strong>, Q. Hu, X. Feng, C. Yang",
+    "venue": "IEEE Biomedical Circuits and Systems Conference",
+    "venue_short": "BioCAS",
+    "year": 2023,
+    "status": "published",
+    "highlight": false,
+    "tags": ["PPG", "Diffusion Model", "Signal Recovery"],
+    "abstract": "Proposed SDPR, a DDPM integrating subject-aware priors with signal dynamics to restore clinical usability of degraded ECG and PPG signals.",
+    "image": "assets/images/papers/sdpr.png",
+    "links": {
+      "paper": "#"
+    }
+  },
+  {
+    "id": "ppg-biometric",
+    "title": "Biometric Recognition Based on Scalable End-to-End Convolutional Neural Network Using Photoplethysmography: A Comparative Study",
+    "authors": "<strong>Daomiao Wang</strong>, Q. Hu, C. Yang",
+    "venue": "Computers in Biology and Medicine",
+    "venue_short": "CBM",
+    "year": 2022,
+    "status": "published",
+    "highlight": false,
+    "tags": ["PPG", "Biometrics", "CNN"],
+    "abstract": "A comparative study on PPG-based biometric recognition using scalable end-to-end convolutional neural networks.",
+    "image": "assets/images/papers/ppg_biometric.png",
+    "links": {
+      "paper": "#"
+    }
+  },
+  {
+    "id": "pismil",
+    "title": "Label-free Anomaly Detection in Cardiovascular Signals with Persistence-informed Multi-instance Learning",
+    "authors": "<strong>Daomiao Wang</strong>, et al.",
+    "venue": "IEEE Journal of Biomedical and Health Informatics",
+    "venue_short": "JBHI",
+    "year": 2025,
+    "status": "under review",
+    "highlight": false,
+    "tags": ["TDA", "MIL", "Anomaly Detection", "LLM"],
+    "abstract": "Proposed PISMIL, fusing persistent homology with MIL for label-free cardiovascular anomaly detection. Topological invariants from quasi-periodic signal phase spaces generate unsupervised priors guiding attention MIL for weakly supervised fine-grained localization. Integrated an LLM semantic engine to support 'verify–confirm' clinical workflow.",
+    "image": "assets/images/papers/pismil.png",
+    "links": {
+      "paper": "#"
+    }
+  },
+  {
+    "id": "cardiac-rehab",
+    "title": "Sense, Adapt, and Coach: Toward Closed-Loop Remote Cardiac Exercise with Proactive Regulation",
+    "authors": "<strong>Daomiao Wang</strong>, et al.",
+    "venue": "Advanced Engineering Informatics",
+    "venue_short": "AEI",
+    "year": 2025,
+    "status": "under review",
+    "highlight": false,
+    "tags": ["Cardiac Rehab", "Agent", "PPG", "RL"],
+    "abstract": "Proposed an agent-driven closed-loop sensing–decision–interaction training system for remote cardiac rehabilitation. Developed a custom ear-clip PPG device for robust heart rate monitoring; applied PPO with GAE for temporal credit assignment under cardiac response latency.",
+    "image": "assets/images/papers/cardiac_rehab.png",
+    "links": {
+      "paper": "#"
+    }
+  }
+]
