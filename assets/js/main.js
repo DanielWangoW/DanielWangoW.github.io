@@ -151,12 +151,77 @@ function setupScrollSpy() {
 }
 
 // ===========================
+// News Scroll Window
+// ===========================
+function setupNewsScroller() {
+  const win = document.querySelector('.news-window');
+  if (!win) return;
+  const items = Array.from(win.querySelectorAll('.news-list li'));
+  if (!items.length) return;
+
+  // --- Dynamic focus ---
+  function updateFocus() {
+    const winCenter = win.scrollTop + win.clientHeight / 2;
+    let closestIdx = 0, closestDist = Infinity;
+    items.forEach((item, i) => {
+      const dist = Math.abs((item.offsetTop + item.offsetHeight / 2) - winCenter);
+      if (dist < closestDist) { closestDist = dist; closestIdx = i; }
+    });
+    items.forEach((item, i) => {
+      item.classList.remove('news-active', 'news-near');
+      const d = Math.abs(i - closestIdx);
+      if (d === 0) item.classList.add('news-active');
+      else if (d === 1) item.classList.add('news-near');
+    });
+  }
+
+  updateFocus();
+  win.addEventListener('scroll', updateFocus, { passive: true });
+
+  // --- Auto-scroll: smooth, fast, continuous ---
+  let isPaused = false;
+  let direction = 1;
+  let rafId = null;
+  let lastTime = null;
+  const SPEED = 38; // px per second — increase for faster scroll
+
+  function tick(ts) {
+    if (!isPaused) {
+      if (lastTime !== null) {
+        const delta = ts - lastTime;
+        const maxScroll = win.scrollHeight - win.clientHeight;
+        win.scrollTop += direction * SPEED * (delta / 1000);
+        if (direction === 1 && win.scrollTop >= maxScroll - 1) {
+          win.scrollTop = maxScroll;
+          direction = -1;
+        } else if (direction === -1 && win.scrollTop <= 1) {
+          win.scrollTop = 0;
+          direction = 1;
+        }
+      }
+      lastTime = ts;
+    } else {
+      lastTime = null;
+    }
+    rafId = requestAnimationFrame(tick);
+  }
+
+  rafId = requestAnimationFrame(tick);
+
+  win.addEventListener('mouseenter', () => { isPaused = true; });
+  win.addEventListener('mouseleave', () => { isPaused = false; });
+  win.addEventListener('touchstart', () => { isPaused = true; }, { passive: true });
+  win.addEventListener('touchend',   () => { setTimeout(() => { isPaused = false; }, 1200); }, { passive: true });
+}
+
+// ===========================
 // Init
 // ===========================
 document.addEventListener('DOMContentLoaded', () => {
   loadPublications();
   setupNav();
   setupScrollSpy();
+  setupNewsScroller();
 
   // Update footer year
   const yearEl = document.getElementById('footer-year');
