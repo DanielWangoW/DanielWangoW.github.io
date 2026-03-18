@@ -7,8 +7,7 @@
     "venue_short": "PR",
     "year": 2026,
     "status": "published",
-    "highlight": true,
-    "tags": ["Signal Processing", "Explainable artificial intelligence", "Motif localization", "Multi-instance learning", "Neural network", "Photoplethysmography", "Physiological data generation"],
+    "tags": ["Explainable AI", "Motif localization", "Multi-instance learning", "Synthetic data generation"],
     "abstract": "Ambulatory hemodynamic monitoring using photoplethysmography (PPG) holds promise for early detection and management of cardiovascular diseases. However, the increasing demand for automatic diagnosis in routine clinicals, coupled with the scarcity of well-labeled datasets, exacerbates significant challenges in developing learning-based tools with accessibility and explainability. To address these issues, this work proposed a reality-inspired pipeline for PPG generation and an Interpretable Hemodynamic pattern recognition framework with Multi-Instance Learning (IHemoMIL). Fluctuation patterns were introduced using anomaly injection and cardiovascular simulation response. This approach produced fine-grained, labeled synthetic PPG in a causality-informed manner for benchmarking. Multi-instance learning, with its aggregation process optimized by ranking-based mechanisms, was first applied to identify hemodynamic patterns and discriminative motifs within PPG waveforms under a weakly supervised paradigm, inherently providing salience-induced explainability. Extensive evaluations across nine datasets showcase IHemoMIL's superior interpretable and predictive performance compared to state-of-the-art methods, with ablation studies validating the effectiveness of key components. The compact yet effective IHemoMIL aligns with human intuition and integrates seamlessly into the diagnostic workflow, thereby contributing to improved patient outcomes and enhanced healthcare delivery. ",
     "image": "https://image-oss-danielwangow.oss-cn-shanghai.aliyuncs.com/PR2026.png",
     "links": {
@@ -24,13 +23,13 @@
     "venue_short": "ICRA",
     "year": 2025,
     "status": "published",
-    "highlight": true,
     "tags": ["Robotics", "Eye gaze Tracking", "HRI", "Serious game", "Neuroplasticity"],
     "abstract": "Therapeutic robotic systems have emerged as reliable tools for physical rehabilitation, providing variableintensity movement assistance to patients with motor impairments. Robot-assisted rehabilitation facilitates the restoration mobility and dexterity, promotes functional neuroplasticity and potentially enables workforce reentry through training-induced cognitive and motor learning. To boost participant engagement and visuomotor coordination, we propose ArmGuider Pro, an advanced upper-limb training system that integrates hand-eye collaboration and gazetriggered assistance within rehabilitation-tailored serious games. The system implements intuitive eye-tracking and visualtriggering strategies to align therapeutic interventions with participants' intentional focus, incorporating immersive gaming elements and adaptive control algorithms. Experimental validation demonstrates significant activation in motor and cognitive cerebral cortex regions, enhanced visual attention concentration in desired target areas (25.92 % improvement), and improved trajectory adherence across sequential sessions (27.27 % improvement). By harnessing visual attention valence, our proposed system could encourage neuroplasticity, supporting its viability for clinical application and widespread adaption in rehabilitation regimens.",
-    "image": "https://image-oss-danielwangow.oss-cn-shanghai.aliyuncs.com/ICRA-Poster%20copy.png",
+    "image": "https://image-oss-danielwangow.oss-cn-shanghai.aliyuncs.com/Graphical_Abstract.png",
     "links": {
       "paper": "https://ieeexplore.ieee.org/abstract/document/11127634",
-      "project": "#"
+      "slides": "https://image-oss-danielwangow.oss-cn-shanghai.aliyuncs.com/ICRA_GnG_Oral_Presentation.pdf",
+      "poster": "https://image-oss-danielwangow.oss-cn-shanghai.aliyuncs.com/ICRA-Poster-A4.pdf"
     }
   },
   {
@@ -42,7 +41,6 @@
     "venue_notes": ["JCR/CAS Q1"],
     "year": 2024,
     "status": "published",
-    "highlight": false,
     "tags": ["ECG", "GNN", "Automatic Diagnostic", "Privacy-Preserving Computation", "Domain Adaptation"],
     "abstract": "Cardiovascular diseases (CVDs) are the leading global cause of death. As first-line diagnostic tool for CVDs, electrocardiograms (ECG) non-invasively assess cardiac condition across all clinical levels. Despite the strides made in automatic ECG analysis through artificial intelligence, current methods fail to utilize spatial–temporal interactions of multi-lead ECG, address multi-center data heterogeneity, and adapt to data security and computational constraints. This study proposed a graph neural network-based framework named PM2ECGCN responding to these challenges of multi-lead ECG from multi-center sources. PM2ECGCN independently extracts spatial–temporal dependencies with learning-based featurization on each isolated subset, and trains collaboratively under feature-sharing strategy that bridging isolated outcomes without exposing raw data. Benefiting from information fusion capacities of graph convolutional network with attention mechanism, PM2ECGCN enhances explicit topological representations of multi-lead ECG via parallelized cardiac graph structures, and fast spectral pooling provides linear inference complexity. PM2ECGCN promotes condition-invariant knowledge learning with domain adaptation for tackling the data heterogeneity of distrubution. Extensive experiments, conducted with various configurations under diverse scenarios, involve two public datasets, PTBXL and ICBEB, along with an external dataset from day-to-day clinical practice we collected. Empirical evaluations showcase outperformance over cutting-edge strategies for multi-center CVD diagnosis with consistent improvements, demonstrating potential for real-world clinical deployment.",
     "image": "https://image-oss-danielwangow.oss-cn-shanghai.aliyuncs.com/PM2ECGCN_1_ESWA.png",
@@ -59,12 +57,12 @@
     "venue_short": "BioCAS",
     "year": 2023,
     "status": "published",
-    "highlight": false,
-    "tags": ["PPG", "Diffusion Model", "Signal Recovery"],
-    "abstract": "Proposed SDPR, a DDPM integrating subject-aware priors with signal dynamics to restore clinical usability of degraded ECG and PPG signals.",
-    "image": "assets/images/papers/sdpr.png",
+    "tags": ["Diffusion Model", "Self-supervised learning", "Transformer", "Signal Recovery"],
+    "abstract": "Photoplethysmography (PPG) has emerged as a promising technology for wearable personal healthcare due to its non-invasive and cost-effective nature. However, owing to the vulnerability to various noise, the useful PPG signals are few and the usability of PPG-based systems are limited. In this paper, we address the challenge of recovering extremely corrupted PPG waveforms with severe distortions, which lead to missing data. Specifically, we propose a novel diffusion-based framework that incorporates remaining values and subject-aware embedding, along with a self-supervised generative training strategy. Extensive experiments were performed on two datasets under three missing rates and two missing patterns. Our proposed model achieves significant improvements of nearly 100% over existing imputation models on quantitative metrics, and together with the visualization, demonstrating its effectiveness for data distribution generation and corrupted PPG restoration. Our proposed method also provides a new perspective for PPG denoising.",
+    "image": "https://image-oss-danielwangow.oss-cn-shanghai.aliyuncs.com/sdpr-figure1.png",
     "links": {
-      "paper": "#"
+      "paper": "https://ieeexplore.ieee.org/document/10388921",
+      "poster": "https://image-oss-danielwangow.oss-cn-shanghai.aliyuncs.com/Bio_CAS_23_Presentation.pdf"
     }
   },
   {
@@ -72,31 +70,30 @@
     "title": "Biometric Recognition Based on Scalable End-to-End Convolutional Neural Network Using Photoplethysmography: A Comparative Study",
     "authors": "<strong>Daomiao Wang</strong>, Q. Hu, C. Yang",
     "venue": "Computers in Biology and Medicine",
-    "venue_short": "CBM",
+    "venue_short": "CIBM",
     "year": 2022,
     "status": "published",
-    "highlight": false,
     "tags": ["PPG", "Biometrics", "CNN"],
-    "abstract": "A comparative study on PPG-based biometric recognition using scalable end-to-end convolutional neural networks.",
-    "image": "assets/images/papers/ppg_biometric.png",
+    "abstract": "Photoplethysmography (PPG), as one of the most widely used physiological signals on wearable devices, with dominance for portability and accessibility, is an ideal carrier of biometric recognition for guaranteeing the security of sensitive information. However, the existing state-of-the-art methods are restricted to practical deployment since power-constrained and compute-insufficient for wearable devices. 1D convolutional neural networks (1D-CNNs) have succeeded in numerous applications on sequential signals. Still, they fall short in modeling long-range dependencies (LRD), which are extremely needed in high-security PPG-based biometric recognition. In view of these limitations, this paper conducts a comparative study of scalable end-to-end 1D-CNNs for capturing LRD and parameterizing authorized templates by enlarging the receptive fields via stacking convolution operations, non-local blocks, and attention mechanisms. Compared to a robust baseline model, seven scalable models have different impacts (−0.2%–9.9%) on the accuracy of recognition over three datasets. Experimental cases demonstrate clear-cut improvements. Scalable models achieve state-of-the-art performance with an accuracy of over 97% on VitalDB and with the best accuracy on BIDMC and PRRB datasets performing 99.5% and 99.3%, respectively. We also discuss the effects of capturing LRD in generated templates by visualizations with Gramian Angular Summation Field and Class Activation Map. This study conducts that the scalable 1D-CNNs offer a performance-excellent and complexity-feasible approach for biometric recognition using PPG.",
+    "image": "https://image-oss-danielwangow.oss-cn-shanghai.aliyuncs.com/bioAuth-CIMB-1.png",
     "links": {
-      "paper": "#"
+      "paper": "https://www.sciencedirect.com/science/article/abs/pii/S0010482522004462?via%3Dihub",
+      "patent":"https://image-oss-danielwangow.oss-cn-shanghai.aliyuncs.com/%E5%8F%91%E6%98%8E%E4%B8%93%E5%88%A9%E6%8E%88%E6%9D%83%E8%AF%81%E4%B9%A620250425-ZL202210708269.X.pdf"
     }
   },
 
-  
+
   {
     "id": "pismil",
     "title": "Label-free Anomaly Detection in Cardiovascular Signals with Persistence-informed Multi-instance Learning",
     "authors": "<strong>Daomiao Wang</strong>, et al.",
     "venue": "IEEE Journal of Biomedical and Health Informatics",
     "venue_short": "JBHI",
-    "year": 2025,
+    "year": 2026,
     "status": "under review",
-    "highlight": false,
-    "tags": ["TDA", "MIL", "Anomaly Detection", "LLM"],
-    "abstract": "Proposed PISMIL, fusing persistent homology with MIL for label-free cardiovascular anomaly detection. Topological invariants from quasi-periodic signal phase spaces generate unsupervised priors guiding attention MIL for weakly supervised fine-grained localization. Integrated an LLM semantic engine to support 'verify–confirm' clinical workflow.",
-    "image": "assets/images/papers/pismil.png",
+    "tags": ["signal understanding", "label-free anomaly detection", "motif discovery", "multi-instance learning", "LLM-driven semantic engine"],
+    "abstract": "Detecting adverse physiological events within quasi-periodic cardiovascular rhythms is critical yet hindered by the opacity of reasoning and reliance on annotations in current models. We bridge this trust-worthiness gap with a label-free, interpretable model ensuring the perceptible explainability essential for clinical trust and the adaptability needed for interactive collaboration. We propose a Persistence-Informed Score-based Multi-Instance Learning (PISMIL) framework that synergizes motif discovery and anomaly detection through the topological dynamics of quasi-periodic cardiovascular signals. PISMIL employs persistent homology to extract invariants capturing motif stability. These features serve as unsupervised priors, generating point-wise scores to guide an attention-based MIL network, yielding continuous, well-demarcated cues that facilitate a verify-then-confirm clinical workflow. Extensive validation on three real-world ECG and two synthetic PPG datasets demonstrates that PISMIL establishes a new benchmark in anomaly detection and motif localization. PISMIL surpasses state-of-the-art baselines, including fully supervised methods, across point-, region-, and instance-level metrics. Benefit analysis reveals that our label-free topological guidance and MIL architecture deliver superior performance by enhancing decision boundary robustness, mitigating attention collapse, and ensuring discriminative structural stability. We enable a perceptible, label-free diagnostic tool that resolves the tension between label-intensive algorithms and clinical scalability. Acting as a clinical copilot, PISMIL generates granular anomaly maps and localizes discriminative motifs for pre-annotation, facilitating seamless integration into existing workflows and offering a robust solution for ubiquitous monitoring.",
+    "image": "https://image-oss-danielwangow.oss-cn-shanghai.aliyuncs.com/pismil.png",
     "links": {
       "paper": "#"
     }
@@ -107,28 +104,26 @@
     "authors": "<strong>Daomiao Wang</strong>, et al.",
     "venue": "Advanced Engineering Informatics",
     "venue_short": "AEI",
-    "year": 2025,
+    "year": 2026,
     "status": "under review",
-    "highlight": false,
-    "tags": ["Cardiac Rehab", "Agent", "PPG", "RL"],
+    "tags": ["Cardiac Rehab", "Agentic system", "ear-clip PPG", "PPO&GAE","Closed-loop training"],
     "abstract": "Proposed an agent-driven closed-loop sensing–decision–interaction training system for remote cardiac rehabilitation. Developed a custom ear-clip PPG device for robust heart rate monitoring; applied PPO with GAE for temporal credit assignment under cardiac response latency.",
-    "image": "assets/images/papers/cardiac_rehab.png",
+    "image": "https://image-oss-danielwangow.oss-cn-shanghai.aliyuncs.com/aei-abs.png",
     "links": {
       "paper": "#"
     }
   },
   {
-    "id": "cardiac-rehab",
-    "title": "Sense, Adapt, and Coach: Toward Closed-Loop Remote Cardiac Exercise with Proactive Regulation",
+    "id": "roboticcontrol",
+    "title": "Adaptive Sensor-Free Trajectory Tracking for Cycle-to-Cycle Consistent Upper-Limb Rehabilitation",
     "authors": "<strong>Daomiao Wang</strong>, et al.",
-    "venue": "Advanced Engineering Informatics",
-    "venue_short": "AEI",
+    "venue": "IEEE/ASME Transactions on Mechatronics",
+    "venue_short": "TMECH",
     "year": 2025,
     "status": "under review",
-    "highlight": false,
-    "tags": ["Cardiac Rehab", "Agent", "PPG", "RL"],
-    "abstract": "Proposed an agent-driven closed-loop sensing–decision–interaction training system for remote cardiac rehabilitation. Developed a custom ear-clip PPG device for robust heart rate monitoring; applied PPO with GAE for temporal credit assignment under cardiac response latency.",
-    "image": "assets/images/papers/cardiac_rehab.png",
+    "tags": ["Sensorless control", "Physical human robot interaction", "Anisotropic admittance control", "Generalized disturbance observer"],
+    "abstract": "Robot-assisted neurorehabilitation for upper-limb impairment is fundamentally hindered by the development of inconsistent and compensatory movement patterns, which reinforce inefficient neural pathways. We first validate that actively enforcing motor consistency with an adaptive, sensor-free robotic framework can dramatically improve motion execution in repetitive training by simplifying the underlying neuromuscular control strategy. The system integrates a parallel robot with a momentum-based observer that estimates user interaction forces without the need for external sensors, thereby creating a cost-effective and back-drivable solution. An anisotropic admittance controller facilitates movement by adaptively providing high compliance along a therapeutic trajectory while penalizing deviations with high stiffness. In a multimodal investigation with thirteen participants, this system reduced end-effector tracking error by up to 85%, suppressed pathological trunk compensation, and promoted appropriate joint coordination. Critically, the framework simplified the underlying neuromuscular control strategy by reducing the number of requisite muscle synergies. This dimensionality reduction stabilized and standardized the neuromuscular output, evidenced by increased similarity in neuromuscular patterns across trials and subjects. By shifting the therapeutic objective from passive assistance to the active enforcement of movement consistency, our framework improves motor execution and simplifies the control burden on the central nervous system, offering a versatile and clinically scalable solution.",
+    "image": "https://image-oss-danielwangow.oss-cn-shanghai.aliyuncs.com/tmech.png",
     "links": {
       "paper": "#"
     }
