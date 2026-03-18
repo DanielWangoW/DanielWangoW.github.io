@@ -151,66 +151,12 @@ function setupScrollSpy() {
 }
 
 // ===========================
-// News Scroll Window
-// ===========================
-function setupNewsScroller() {
-  const win = document.querySelector('.news-window');
-  if (!win) return;
-
-  const items = Array.from(win.querySelectorAll('.news-list li'));
-  if (!items.length) return;
-
-  function updateFocus() {
-    const winCenter = win.scrollTop + win.clientHeight / 2;
-    let closestIdx = 0;
-    let closestDist = Infinity;
-
-    items.forEach((item, i) => {
-      const itemCenter = item.offsetTop + item.offsetHeight / 2;
-      const dist = Math.abs(itemCenter - winCenter);
-      if (dist < closestDist) { closestDist = dist; closestIdx = i; }
-    });
-
-    items.forEach((item, i) => {
-      item.classList.remove('news-active', 'news-near');
-      const dist = Math.abs(i - closestIdx);
-      if (dist === 0) item.classList.add('news-active');
-      else if (dist === 1) item.classList.add('news-near');
-    });
-  }
-
-  updateFocus();
-  win.addEventListener('scroll', updateFocus, { passive: true });
-
-  let direction = 1;
-  let isPaused = false;
-
-  function autoStep() {
-    if (isPaused) return;
-    const maxScroll = win.scrollHeight - win.clientHeight;
-    const current = win.scrollTop;
-    if (direction === 1 && current >= maxScroll - 1) direction = -1;
-    else if (direction === -1 && current <= 1) direction = 1;
-    const itemH = items[0] ? items[0].offsetHeight : 52;
-    win.scrollBy({ top: direction * itemH, behavior: 'smooth' });
-  }
-
-  setInterval(autoStep, 2800);
-
-  win.addEventListener('mouseenter', () => { isPaused = true; });
-  win.addEventListener('mouseleave', () => { isPaused = false; });
-  win.addEventListener('touchstart', () => { isPaused = true; }, { passive: true });
-  win.addEventListener('touchend', () => { setTimeout(() => { isPaused = false; }, 1500); }, { passive: true });
-}
-
-// ===========================
 // Init
 // ===========================
 document.addEventListener('DOMContentLoaded', () => {
   loadPublications();
   setupNav();
   setupScrollSpy();
-  setupNewsScroller();
 
   // Update footer year
   const yearEl = document.getElementById('footer-year');
