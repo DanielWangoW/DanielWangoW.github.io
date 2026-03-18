@@ -151,6 +151,44 @@ function setupScrollSpy() {
 }
 
 // ===========================
+// News Rendering
+// ===========================
+const BADGE_LABELS = { pub: 'Pub', award: 'Award', talk: 'Talk', misc: 'Misc' };
+
+async function loadNews() {
+  try {
+    const response = await fetch('data/news.json');
+    const news = await response.json();
+    renderNews(news);
+    setupNewsScroller();
+  } catch (e) {
+    console.error('Failed to load news:', e);
+  }
+}
+
+function renderNews(news) {
+  const list = document.querySelector('#news .news-list');
+  if (!list) return;
+  list.innerHTML = '';
+
+  news.forEach(item => {
+    const li = document.createElement('li');
+    const type = (item.type || 'misc').toLowerCase();
+    const badgeClass = 'badge-' + type;
+    const label = BADGE_LABELS[type] || type.charAt(0).toUpperCase() + type.slice(1);
+
+    li.innerHTML = `
+      <span class="news-date">${item.date}</span>
+      <span>
+        <span class="news-badge ${badgeClass}">${label}</span>
+        ${item.content}
+      </span>
+    `;
+    list.appendChild(li);
+  });
+}
+
+// ===========================
 // News Scroll Window
 // ===========================
 function setupNewsScroller() {
@@ -180,7 +218,6 @@ function setupNewsScroller() {
 
   // --- Auto-scroll: smooth, fast, continuous ---
   let isPaused = false;
-  let direction = 1;
   let rafId = null;
   let lastTime = null;
   const SPEED = 38; // px per second — increase for faster scroll
@@ -190,13 +227,11 @@ function setupNewsScroller() {
       if (lastTime !== null) {
         const delta = ts - lastTime;
         const maxScroll = win.scrollHeight - win.clientHeight;
-        win.scrollTop += direction * SPEED * (delta / 1000);
-        if (direction === 1 && win.scrollTop >= maxScroll - 1) {
-          win.scrollTop = maxScroll;
-          direction = -1;
-        } else if (direction === -1 && win.scrollTop <= 1) {
+        win.scrollTop += SPEED * (delta / 1000);
+        if (win.scrollTop >= maxScroll - 1) {
+          // Loop: jump to top and continue scrolling down
           win.scrollTop = 0;
-          direction = 1;
+          lastTime = ts;
         }
       }
       lastTime = ts;
@@ -219,9 +254,9 @@ function setupNewsScroller() {
 // ===========================
 document.addEventListener('DOMContentLoaded', () => {
   loadPublications();
+  loadNews();
   setupNav();
   setupScrollSpy();
-  setupNewsScroller();
 
   // Update footer year
   const yearEl = document.getElementById('footer-year');

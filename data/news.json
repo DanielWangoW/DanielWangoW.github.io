@@ -1,0 +1,72 @@
+[
+  {
+    "date": "2026.01",
+    "type": "pub",
+    "content": "Our paper <em>\"Action-Aware Multimodal Wavelet Fusion Network for Quantitative Elbow Motor Function Assessment Using sEMG and Robotic Kinematics\"</em> accepted by <strong>Sensors</strong>."
+  },
+  {
+    "date": "2025.12",
+    "type": "pub",
+    "content": "My <strong>first-author</strong> paper <em>\"Thinking Like Clinicians: Ranking-based MIL for PPG-based Hemodynamic Fluctuation Detection\"</em> accepted by <strong>Pattern Recognition</strong>."
+  },
+  {
+    "date": "2025.07",
+    "type": "pub",
+    "content": "Our paper <em>\"Unleashing the Power of Pretrained Transformer for Dense Prediction in Physiological Signals\"</em> accepted by <strong>IEEE Journal of Biomedical and Health Informatics</strong>."
+  },
+  {
+    "date": "2025.05",
+    "type": "talk",
+    "content": "Presented <em>\"Gaze and Go\"</em> at <strong>IEEE ICRA 2025</strong>, Atlanta, GA."
+  },
+  {
+    "date": "2025.05",
+    "type": "award",
+    "content": "Honored as <strong>Outstanding Student (1/5)</strong>, Dept. of BME, Fudan University."
+  },
+  {
+    "date": "2025.01",
+    "type": "pub",
+    "content": "My <strong>first-author</strong> paper <em>\"Gaze and Go: Harnessing Visual Attention Valence in Upper-Limb Robotic Rehabilitation with Tailored Gamification and Eye Tracking for Neuroplasticity\"</em> accepted by <strong>IEEE ICRA 2025</strong>."
+  },
+  {
+    "date": "2024.12",
+    "type": "misc",
+    "content": "Joined <strong>ArkAI Lab, ZDriod Medical</strong> as a Research Intern (Aug. 2024 - Dec. 2025)."
+  },
+  {
+    "date": "2024.09",
+    "type": "pub",
+    "content": "Our paper <em>\"Efficient multi-view fusion and flexible adaptation to view missing in cardiovascular system signals\"</em> accepted by <strong>Neural Networks</strong>."
+  },
+  {
+    "date": "2024.05",
+    "type": "award",
+    "content": "Honored as <strong>Outstanding Student Cadre</strong> (sole recipient), Dept. of BME, Fudan University."
+  },
+  {
+    "date": "2024.03",
+    "type": "pub",
+    "content": "My <strong>first-author</strong> paper <em>\"PM2ECGCN: Parallelized spatial-temporal structures of multi-lead ECG with graph convolution network for multi-center cardiac disease diagnosis\"</em> accepted by <strong>Expert Systems with Applications</strong>."
+  },
+  {
+    "date": "2023.10",
+    "type": "pub",
+    "content": "My <strong>first-author</strong> paper <em>\"Diffusion model with self-supervised training for subject-aware PPG recovery\"</em> accepted by <strong>IEEE BioCAS 2023</strong>."
+  },
+  {
+    "date": "2023.05",
+    "type": "award",
+    "content": "Received <strong>Outstanding Graduate of Shanghai</strong> (sole recipient, Dept. of EE, Class of 2023)."
+  },
+  {
+    "date": "2022.06",
+    "type": "pub",
+    "content": "Our paper <em>\"PPG-based blood pressure estimation can benefit from scalable multi-scale fusion neural networks and multi-task learning\"</em> accepted by <strong>Biomedical Signal Processing and Control</strong>."
+  },
+  {
+    "date": "2022.05",
+    "type": "pub",
+    "content": "My <strong>first-author</strong> paper <em>\"Biometric recognition based on scalable end-to-end convolutional neural network using photoplethysmography: A comparative study\"</em> accepted by Computers in Biology and Medicine."
+  }
+]
