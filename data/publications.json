@@ -91,7 +91,7 @@
     "venue_short": "JBHI",
     "year": 2026,
     "status": "under review",
-    "tags": ["signal understanding", "label-free anomaly detection", "motif discovery", "multi-instance learning", "LLM-driven semantic engine"],
+    "tags": ["Signal understanding", "Label-free anomaly detection", "Motif discovery", "Multi-instance learning", "LLM-driven semantic engine"],
     "abstract": "Detecting adverse physiological events within quasi-periodic cardiovascular rhythms is critical yet hindered by the opacity of reasoning and reliance on annotations in current models. We bridge this trust-worthiness gap with a label-free, interpretable model ensuring the perceptible explainability essential for clinical trust and the adaptability needed for interactive collaboration. We propose a Persistence-Informed Score-based Multi-Instance Learning (PISMIL) framework that synergizes motif discovery and anomaly detection through the topological dynamics of quasi-periodic cardiovascular signals. PISMIL employs persistent homology to extract invariants capturing motif stability. These features serve as unsupervised priors, generating point-wise scores to guide an attention-based MIL network, yielding continuous, well-demarcated cues that facilitate a verify-then-confirm clinical workflow. Extensive validation on three real-world ECG and two synthetic PPG datasets demonstrates that PISMIL establishes a new benchmark in anomaly detection and motif localization. PISMIL surpasses state-of-the-art baselines, including fully supervised methods, across point-, region-, and instance-level metrics. Benefit analysis reveals that our label-free topological guidance and MIL architecture deliver superior performance by enhancing decision boundary robustness, mitigating attention collapse, and ensuring discriminative structural stability. We enable a perceptible, label-free diagnostic tool that resolves the tension between label-intensive algorithms and clinical scalability. Acting as a clinical copilot, PISMIL generates granular anomaly maps and localizes discriminative motifs for pre-annotation, facilitating seamless integration into existing workflows and offering a robust solution for ubiquitous monitoring.",
     "image": "https://image-oss-danielwangow.oss-cn-shanghai.aliyuncs.com/pismil.png",
     "links": {
@@ -106,7 +106,7 @@
     "venue_short": "AEI",
     "year": 2026,
     "status": "under review",
-    "tags": ["Cardiac Rehab", "Agentic system", "ear-clip PPG", "PPO&GAE","Closed-loop training"],
+    "tags": ["Cardiac Rehab", "Agentic system", "Ear-clip PPG", "PPO&GAE","Closed-loop training"],
     "abstract": "Proposed an agent-driven closed-loop sensing–decision–interaction training system for remote cardiac rehabilitation. Developed a custom ear-clip PPG device for robust heart rate monitoring; applied PPO with GAE for temporal credit assignment under cardiac response latency.",
     "image": "https://image-oss-danielwangow.oss-cn-shanghai.aliyuncs.com/aei-abs.png",
     "links": {

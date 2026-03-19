@@ -733,6 +733,14 @@ section {
   font-family: var(--font-mono);
 }
 
+.project-funding {
+  font-size: 0.78rem;
+  color: #2e7d32;
+  font-weight: 600;
+  margin-bottom: 8px;
+  padding: 3px 0;
+}
+
 .project-desc {
   font-size: 0.82rem;
   color: var(--color-text-muted);
